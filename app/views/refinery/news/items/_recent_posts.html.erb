@@ -1,0 +1,23 @@
+<nav id="recent_news_items">
+   <% if @items.any? %>
+    <% @items.each do |item| %>
+      <article class="news_items_main">
+          <%= image_fu item.news_image, '220x220', class: "image-align-#{cycle("left", "right")}" %>
+          <div class="news_items_content">
+          <h2><%= link_to item.title, refinery.news_item_path(item) %></h2>
+          <p class='published_date'>
+            <small><%= 'Published' %> <%= l(item.publish_date, :format => :long) %></small>
+          </p>
+          <div class="news_item_truncated">
+          <%= truncate  item.body, :length => 300,
+                      :omission => " ... #{link_to 'read_more', refinery.news_item_path(item)}",
+                      :preserve_html_tags => true %>
+          </div>
+        </div>
+        </div>
+      </article>
+    <% end %>
+  <% else %>
+    <p><em>no items yet</em></p>
+  <% end %>
+</nav>

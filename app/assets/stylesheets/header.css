@@ -1,0 +1,85 @@
+#topMenu {
+  background-color: #03954B;
+}
+
+#topPic {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+#menuBar {
+  display: inline;
+  padding-top: 20px;
+  background-color: gray;
+  padding-bottom: 0;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  top: -150px;
+}
+
+#logo {
+  display: inline-block;
+}
+
+.logo {
+  position: relative;
+  height: 120px;
+  display: inline-block;
+  width: relative;
+  z-index: 10;
+  top: 10px;
+}
+
+#title {
+  font-style: italic;
+  color: white;
+  display: inline-block;
+  padding: 0;
+}
+
+#title h1 {
+  font-size: 3.8em;
+  margin: 2px;
+  padding: 0;
+}
+
+#title h2 {
+  font-size: 1em;
+}
+
+/* For different sizes */
+
+@media (max-width: 350px) { /* Phone size */
+  #topPic {
+    height: 30px;
+  }
+}
+
+@media (min-width: 450px) { /* Inbetween Size */
+  .image {
+    top: -250px;
+  }
+}
+
+@media (min-width: 600px) { /* Inbetween Size */
+  .image {
+    top: -350px;
+  }
+}
+
+@media (min-width: 1050px) { /* Tablet size */
+  .image {
+    top: -450px;
+  }
+}
+
+@media (min-width: 2000px) { /* Large monitor size */
+  .image {
+    top: -750px;
+  }
+}

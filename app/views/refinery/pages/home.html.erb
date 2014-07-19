@@ -1,0 +1,13 @@
+
+<div id="imageMenu">
+  <ul>
+    <li><span class='imageMenuTitle'>Men</span><%= link_to image_tag("ws10.jpg", :class => 'imageMenuImage'), refinery.root_path %></li>
+    <li><span class='imageMenuTitle'>Women</span><%= link_to image_tag("ws11.jpg", :class => 'imageMenuImage'), refinery.root_path %></li>
+    <li><span class='imageMenuTitle'>Juniors</span><%= link_to image_tag("ws12.jpg", :class => 'imageMenuImage'), refinery.root_path %></li>
+    <li><span class='imageMenuTitle'>Masters</span><%= link_to image_tag("ws12.jpg", :class => 'imageMenuImage'), refinery.root_path %></li>
+  </ul>
+</div>
+
+<% @items = Refinery::News::Item.latest(10) %>
+
+<%= render :partial => '/refinery/news/items/recent_posts' %>

@@ -1,0 +1,93 @@
+#menu {
+    display: inline;
+    position: relative;
+}
+
+#menu ul ul {
+    display: none;
+}
+
+#menu ul li:hover > ul{
+    display: block;
+}
+
+#menu ul {
+    z-index: 1;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+#menu ul li {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+#menu ul li a {
+    padding: 5px 10px 5px 10px;
+    before: "";
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#menu ul li a:before {
+    content: "";
+}
+
+#menu ul li:hover {
+    background: #4b545f;
+}
+
+#menu ul li:hover a {
+    color: #fff;
+}
+
+#menu ul li:hover a:before {
+    content: "";
+}
+
+
+#menu ul li:hover > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu ul li:hover > ul li {
+    float: none;
+    display: block;
+}
+
+#menu ul li:hover > ul li a {
+    color: #666;
+    min-width: 120px;
+    text-decoration: none;
+}
+
+#menu ul li:hover > ul li a:before {
+    content: "";
+}
+
+
+#menu ul li:hover > ul li a:hover{
+    color: #fff;
+}
+
+#menu ul li {
+    position: relative;
+}
+
+#menu ul li ul {
+    position: absolute;
+    top: 28px;
+    left: 0px;
+}
+
+#menu ul li ul li ul {
+    position: absolute;
+    top: 0px;
+    left: 140px;
+}

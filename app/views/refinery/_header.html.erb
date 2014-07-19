@@ -1,0 +1,13 @@
+<div id='topMenu'>
+  <div id='topPic'>
+    <%= image_tag "ws2.jpg", :class => 'image' %>
+  </div>
+  <div id='logo'>
+    <%= link_to image_tag("mphc_logo_pic_only.png", :class => 'logo'), refinery.root_path %>
+  </div>
+  <div id='title'>
+    <h1>FALCONS</h1>
+    <h2>Mornington Peninsula Hockey Club</h2>
+  </div>
+  <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+</div>
