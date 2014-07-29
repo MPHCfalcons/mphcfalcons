@@ -41,6 +41,15 @@
     <%= f.label :source %>
     <%= f.text_field :source, :class => "larger widest" %>
   </div>
+  
+  <div class='field'>
+    <%= f.label :file_id -%>
+    <%= render :partial => "/refinery/admin/resource_picker", :locals =>
+    {
+          :f => f,
+          :field => :attachment_id,
+          :resource => @item.attachment} %>
+  </div>
 
   <%= render "/refinery/admin/form_actions",
              :f => f,

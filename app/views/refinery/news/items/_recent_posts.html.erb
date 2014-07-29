@@ -13,6 +13,7 @@
                       :omission => " ... #{link_to 'read_more', refinery.news_item_path(item)}",
                       :preserve_html_tags => true %>
           </div>
+          <%= link_to("Download", item.attachment.url) if item.attachment %>
         </div>
         </div>
       </article>

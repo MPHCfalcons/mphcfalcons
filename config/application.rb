@@ -19,7 +19,12 @@ module Mphc
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+    
+    # refinery change content-disipotion
+    Refinery::Core::Engine.after_inclusion do
+      Refinery::Resource # force autoload
+      ::Dragonfly[:refinery_resources].content_disposition = nil
+    end   # -- all .rb files in that directory are automatically loaded.
 
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)

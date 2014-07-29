@@ -3,6 +3,8 @@ PATH
   specs:
     refinerycms-events (1.0)
       refinerycms-core (~> 2.1.2)
+    refinerycms-sponsors (1.0)
+      refinerycms-core (~> 2.1.2)
 
 GEM
   remote: https://rubygems.org/
@@ -199,6 +201,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-events!
   refinerycms-news (~> 2.1.0)
+  refinerycms-sponsors!
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

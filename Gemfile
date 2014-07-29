@@ -51,3 +51,5 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 #  gem 'refinerycms-page-images', '~> 2.1.0'
 
 gem 'refinerycms-events', :path => 'vendor/extensions'
+
+gem 'refinerycms-sponsors', :path => 'vendor/extensions'
