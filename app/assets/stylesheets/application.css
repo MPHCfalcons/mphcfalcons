@@ -42,6 +42,12 @@ body {
   width: 25%;
 }
 
+#imageMenu a:link, 
+#imageMenu a:visited,
+#imageMenu a:active {
+  color: white;
+}
+
 .imageMenuTitle {
   z-index: 5;
   position: absolute;
