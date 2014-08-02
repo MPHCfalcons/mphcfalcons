@@ -1,21 +1,15 @@
-.menuContainer {
+.headerContainer {
   top: 50px;
   position: absolute;
   background-color: #03954B;
-  width: calc(100% - 140px);
+  width: 100%;
   z-index: 20;
-  padding-left: 140px;
-  padding-top: 20px;
+  text-align: center;
 }
 
 .fixed {
   position:fixed;
   top:0;
-}
-
-.fixedLogo {
-  position: fixed !important;
-  top: -30px !important;
 }
 
 #topPic {
@@ -25,34 +19,33 @@
   overflow: hidden;
 }
 
-#menuBar {
-  height: 70px;
-  display: inline-block;
-  padding-top: 20px;
-  background-color: gray;
-  padding-bottom: 0;
-}
-
-.image {
+.topImage {
   position: relative;
   width: 100%;
   top: -150px;
 }
 
 .logo {
-  position: absolute;
   height: 120px;
-  display: inline-block;
   width: relative;
+}
+
+.logoContainer {
   z-index: 30;
-  top: 20px;
+  display: inline-block;
+  position: absolute;
+  top: -45px;
 }
 
 #title {
   font-style: italic;
   color: white;
   display: inline-block;
+  position: relative;
   padding: 0;
+  padding-left: 130px;
+  vertical-align: top;
+  margin-top: 20px;
 }
 
 #title h1 {
@@ -74,25 +67,25 @@
 }
 
 @media (min-width: 450px) { /* Inbetween Size */
-  .image {
+  .topImage {
     top: -250px;
   }
 }
 
 @media (min-width: 600px) { /* Inbetween Size */
-  .image {
+  .topImage {
     top: -350px;
   }
 }
 
 @media (min-width: 1050px) { /* Tablet size */
-  .image {
+  .topImage {
     top: -450px;
   }
 }
 
 @media (min-width: 2000px) { /* Large monitor size */
-  .image {
+  .topImage {
     top: -750px;
   }
 }

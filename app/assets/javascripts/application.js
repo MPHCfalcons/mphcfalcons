@@ -20,11 +20,10 @@ var num = 50; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
-      console.log($('.menuContainer'));
-        $('.menuContainer').addClass('fixed');
-        $('.logo').addClass('fixedLogo');
+        $('.headerContainer').addClass('fixed');
+        //$('.logo').addClass('fixedLogo');
     } else {
-        $('.menuContainer').removeClass('fixed');
-        $('.logo').removeClass('fixedLogo');
+        $('.headerContainer').removeClass('fixed');
+        //$('.logo').removeClass('fixedLogo');
     }
 });

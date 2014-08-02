@@ -1,6 +1,9 @@
 #menu {
-    display: inline;
+    display: inline-block;
     position: relative;
+    vertical-align: top;
+    padding-top: 11px;
+    text-align: center;
 }
 
 #menu ul ul {
@@ -21,7 +24,6 @@
 
 #menu ul li {
     float: left;
-    padding-left: 10px;
     padding-right: 10px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -40,7 +42,6 @@
 }
 
 #menu ul li:hover {
-    background: #4b545f;
 }
 
 #menu ul li:hover a {
@@ -51,30 +52,37 @@
     content: "";
 }
 
-
 #menu ul li:hover > ul {
     margin: 0px;
     padding: 0px;
+    padding-left: 10px;
+}
+
+#menu ul li ul .first {
+  margin-top: 31px; //the gap between the menu and submenu
 }
 
 #menu ul li:hover > ul li {
     float: none;
     display: block;
+    padding-top:2px;
+    background-color: black;
+    border-bottom: solid 1px;
+    border-bottom-color: green;
 }
 
 #menu ul li:hover > ul li a {
-    color: #666;
-    min-width: 120px;
+    color: #fff;
     text-decoration: none;
+    font-weight: normal;
 }
 
 #menu ul li:hover > ul li a:before {
     content: "";
 }
 
-
 #menu ul li:hover > ul li a:hover{
-    color: #fff;
+    color: green;
 }
 
 #menu ul li {
@@ -89,6 +97,6 @@
 
 #menu ul li ul li ul {
     position: absolute;
-    top: 0px;
+    top: 28px;
     left: 140px;
 }
