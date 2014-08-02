@@ -24,8 +24,12 @@ body {
   margin: 0;
 }
 
+#page {
+  padding-top: 140px;
+}
+
 #imageMenu {
-  height: 250px;
+  height: 320px;
   overflow: hidden;
   margin-bottom: 20px;
 }

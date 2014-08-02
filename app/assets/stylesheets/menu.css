@@ -23,7 +23,8 @@
     float: left;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 14px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 #menu ul li a {

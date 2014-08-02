@@ -1,5 +1,21 @@
-#topMenu {
+.menuContainer {
+  top: 50px;
+  position: absolute;
   background-color: #03954B;
+  width: calc(100% - 140px);
+  z-index: 20;
+  padding-left: 140px;
+  padding-top: 20px;
+}
+
+.fixed {
+  position:fixed;
+  top:0;
+}
+
+.fixedLogo {
+  position: fixed !important;
+  top: -30px !important;
 }
 
 #topPic {
@@ -10,7 +26,8 @@
 }
 
 #menuBar {
-  display: inline;
+  height: 70px;
+  display: inline-block;
   padding-top: 20px;
   background-color: gray;
   padding-bottom: 0;
@@ -22,17 +39,13 @@
   top: -150px;
 }
 
-#logo {
-  display: inline-block;
-}
-
 .logo {
-  position: relative;
+  position: absolute;
   height: 120px;
   display: inline-block;
   width: relative;
-  z-index: 10;
-  top: 10px;
+  z-index: 30;
+  top: 20px;
 }
 
 #title {
