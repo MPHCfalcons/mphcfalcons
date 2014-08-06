@@ -1,20 +1,13 @@
 
 <div id="imageMenu">
   <ul>
-    <li><a href='../players/men' onclick="transition()" class='imageMenuTitle'>Men</a><%= link_to image_tag("ws10.jpg", :class => 'imageMenuImage'), '../players/men' %></li>
-    <li><a href='../players/women' class='imageMenuTitle'>Women</a><%= link_to image_tag("ws11.jpg", :class => 'imageMenuImage'), '../players/women' %></li>
-    <li><a href='../players/juniors' class='imageMenuTitle'>Juniors</a><%= link_to image_tag("ws12.jpg", :class => 'imageMenuImage'), '../players/juniors' %></li>
-    <li><a href='../players/masters' class='imageMenuTitle'>Masters</a><%= link_to image_tag("ws13.jpg", :class => 'imageMenuImage'), '../players/masters' %></li>
+    <li class="imageMenuItem"><a href='../players/men'  class='imageMenuTitle'>Men</a><%= link_to image_tag("ws10.jpg", :class => 'imageMenuImage first'), '../players/men' %></li>
+    <li class="imageMenuItem"><a href='../players/women' class='imageMenuTitle'>Women</a><%= link_to image_tag("ws11.jpg", :class => 'imageMenuImage second'), '../players/women' %></li>
+    <li class="imageMenuItem"><a href='../players/juniors' class='imageMenuTitle'>Juniors</a><%= link_to image_tag("ws12.jpg", :class => 'imageMenuImage third'), '../players/juniors' %></li>
+    <li class="imageMenuItem"><a href='../players/masters' class='imageMenuTitle'>Masters</a><%= link_to image_tag("ws13.jpg", :class => 'imageMenuImage forth'), '../players/masters' %></li>
   </ul>
 </div>
 
 <% @items = Refinery::News::Item.latest(10) %>
 
 <%= render :partial => '/refinery/news/items/recent_posts' %>
-
-<script>
-function transition() {
-  console.log('fired');
-  sleep(3);
-}
-</script>

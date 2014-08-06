@@ -1,6 +1,7 @@
 .news_items_main {
   background-color: #d4d4d4;
   width: 100%;
+  position: relative;
 }
 
 .published_date {
@@ -36,5 +37,16 @@ a:link, a:visited, a:active {
 
 .news_items_image {
     display: inline-block;
+}
+
+.readMore {
+  margin-right: 20px;
+}
+
+.news_footer {
+  width: 100%;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 10px;
 }
 

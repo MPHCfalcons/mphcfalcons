@@ -14,16 +14,49 @@
 //= require jquery_ujs
 //= require_tree .
 
-console.log('in js');
-
-var num = 50; //number of pixels before modifying styles
+// Sticks header to to of page after scrolled past
+var num = 50; //number of pixels before modifying styles (size of top pic)
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
         $('.headerContainer').addClass('fixed');
-        //$('.logo').addClass('fixedLogo');
     } else {
         $('.headerContainer').removeClass('fixed');
-        //$('.logo').removeClass('fixedLogo');
     }
 });
+
+  $(".imageMenuItem").click(
+    function(event) {
+      event.preventDefault();
+      console.log($(event.currentTarget));
+      $(event.currentTarget).addClass('imageMenuItemOpen');
+      $(event.currentTarget).nextAll().addClass('imageMenuItemClosedRight');
+      $(event.currentTarget).prevAll().addClass('imageMenuItemClosedLeft');
+
+    }
+  );
+
+//function transition(e) {
+  //e.preventDefault();
+  //console.log('here');
+//}
+
+// The speed of one transition (fadeIn or fadeOut).
+// Full execution time will be:
+// (browser navigation time) + speed * 2;
+// You can set this to slow, medium, fast, or number of ms.
+//var speed = 'slow';
+
+//$('html, body').hide();
+//$(document).ready(function() {
+    //$('html, body').fadeIn(speed, function() {
+        //$('a[href], button[href]').click(function(event) {
+            //var url = $(this).attr('href');
+            //if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+            //event.preventDefault();
+            //$('html, body').fadeOut(speed, function() {
+                //window.location = url;
+            //});
+        //});
+    //});
+//});

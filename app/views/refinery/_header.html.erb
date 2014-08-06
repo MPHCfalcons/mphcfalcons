@@ -7,8 +7,10 @@
     <%= link_to image_tag("mphc_logo_pic_only.png", :class => 'logo'), refinery.root_path %>
     </div>
     <div id='title'>
-      <h1>FALCONS</h1>
-      <h2>Mornington Peninsula Hockey Club</h2>
+      <a href='../home'>
+        <h1>FALCONS</h1>
+        <h2>Mornington Peninsula Hockey Club</h2>
+      </a>
     </div>
     <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
   </div>

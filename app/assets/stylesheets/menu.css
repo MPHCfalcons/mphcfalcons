@@ -24,7 +24,6 @@
 
 #menu ul li {
     float: left;
-    padding-right: 10px;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -99,4 +98,17 @@
     position: absolute;
     top: 28px;
     left: 140px;
+}
+
+
+
+/* menu bar */
+
+@media (max-width: 910px) {
+  #menu ul li ul .first {
+    margin-top: 20px; //the gap between the menu and submenu
+  }
+  #menu {
+    padding-top: 0px;
+  }
 }

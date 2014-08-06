@@ -37,9 +37,14 @@
   top: -45px;
 }
 
+#title a:link, 
+#title a:visited,
+#title a:active {
+  color: white;
+}
+
 #title {
   font-style: italic;
-  color: white;
   display: inline-block;
   position: relative;
   padding: 0;
@@ -59,6 +64,20 @@
 }
 
 /* For different sizes */
+
+/* menu bar */
+
+@media (max-width: 910px) {
+  #menu ul li ul .first {
+    margin-top: 20px; //the gap between the menu and submenu
+  }
+  #menu {
+    padding-top: 0px;
+  }
+}
+
+
+/* Top picture */
 
 @media (max-width: 350px) { /* Phone size */
   #topPic {
