@@ -45,8 +45,7 @@ a:link, a:visited, a:active {
 
 .news_footer {
   width: 100%;
+  padding-top: 15px;
   font-size: 1rem;
-  position: absolute;
-  bottom: 10px;
 }
 

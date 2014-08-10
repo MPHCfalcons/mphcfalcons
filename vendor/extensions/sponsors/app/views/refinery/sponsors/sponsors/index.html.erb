@@ -2,7 +2,10 @@
   <ul id="sponsors">
     <% @sponsors.each do |sponsor| %>
       <li>
-        <%= link_to sponsor.title, refinery.sponsors_sponsor_path(sponsor) %>
+        <%= image_fu sponsor.image, nil %>
+        <h2><%= link_to sponsor.title, refinery.sponsors_sponsor_path(sponsor) %></h2>
+        <%=raw sponsor.description %>
+        <%=raw sponsor.link %>
       </li>
     <% end %>
   </ul>

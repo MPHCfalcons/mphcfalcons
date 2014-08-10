@@ -67,7 +67,7 @@
     padding-top:2px;
     background-color: black;
     border-bottom: solid 1px;
-    border-bottom-color: green;
+    border-bottom-color: #03954B;
 }
 
 #menu ul li:hover > ul li a {

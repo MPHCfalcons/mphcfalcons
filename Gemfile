@@ -39,6 +39,9 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+gem 'react-source', '~> 0.11.1'
+gem 'react-jsx', require: 'react/jsx'
+
 # Refinery CMS
 gem 'refinerycms', '~> 2.1.0'
 gem "refinerycms-news", '~> 2.1.0'

@@ -28,7 +28,6 @@ $(window).bind('scroll', function () {
   $(".imageMenuItem").click(
     function(event) {
       event.preventDefault();
-      console.log($(event.currentTarget));
       $(event.currentTarget).addClass('imageMenuItemOpen');
       $(event.currentTarget).nextAll().addClass('imageMenuItemClosedRight');
       $(event.currentTarget).prevAll().addClass('imageMenuItemClosedLeft');

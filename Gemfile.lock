@@ -110,6 +110,11 @@ GEM
     rake (10.3.2)
     rdoc (3.12.2)
       json (~> 1.4)
+    react-jsx (0.8.0)
+      execjs (>= 2.0.2)
+      json (>= 1.8.0)
+      react-source (>= 0.4.1)
+    react-source (0.11.1)
     refinerycms (2.1.2)
       bundler (>= 1.2.2, < 2.0)
       refinerycms-authentication (= 2.1.2)
@@ -197,6 +202,8 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.18)
+  react-jsx
+  react-source (~> 0.11.1)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-events!

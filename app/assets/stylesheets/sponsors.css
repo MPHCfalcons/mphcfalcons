@@ -1,0 +1,11 @@
+#sponsors {
+  list-style: none;
+  text-align: center;
+}
+
+#sponsors li {
+  width: 500px;
+  display: inline-block;
+  padding-bottom: 50px;
+  text-align: center;
+}
