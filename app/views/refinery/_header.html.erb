@@ -1,17 +1,24 @@
+<script type="text/javascript" src="http://fast.fonts.net/jsapi/8b7682e4-600e-4df3-ae11-33d3cd3349f3.js"></script>
+
 <div id='topMenu'>
   <div id='topPic'>
     <%= image_tag "ws2.jpg", :class => 'topImage' %>
   </div>
   <div class='headerContainer'>
     <div class='logoContainer'>
-    <%= link_to image_tag("mphc_logo_pic_only.png", :class => 'logo'), refinery.root_path %>
+    <%= link_to image_tag("falcon-birdlogo.png", :class => 'logo'), refinery.root_path %>
     </div>
     <div id='title'>
-      <a href='../home'>
-        <h1>FALCONS</h1>
-        <h2>Mornington Peninsula Hockey Club</h2>
-      </a>
+      <%= link_to image_tag("mphclogowhite.png", :class => 'typeLogo'), refinery.root_path %>
     </div>
     <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+    <div id="search_container">
+    <%= form_tag refinery.search_path do -%>
+      <%= text_field_tag :query, {}, {
+                         :type => "search",
+                         :placeholder => "search",
+                         :value => (params[:query] if params[:query])} %>
+    <% end %>
+    </div>
   </div>
 </div>

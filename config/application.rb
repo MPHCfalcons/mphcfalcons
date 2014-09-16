@@ -26,6 +26,7 @@ module Mphc
       ::Dragonfly[:refinery_resources].content_disposition = nil
     end   # -- all .rb files in that directory are automatically loaded.
 
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
 

@@ -15,6 +15,7 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'autoprefixer-rails', '~> 2.2.0.20140804'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -50,7 +51,7 @@ gem "refinerycms-news", '~> 2.1.0'
 gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 #  gem 'refinerycms-blog', '~> 2.1.0'
 #  gem 'refinerycms-inquiries', '~> 2.1.0'
-#  gem 'refinerycms-search', '~> 2.1.0'
+  gem 'refinerycms-search', '~> 2.1.0'
 #  gem 'refinerycms-page-images', '~> 2.1.0'
 
 gem 'refinerycms-events', :path => 'vendor/extensions'

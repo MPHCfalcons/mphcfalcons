@@ -44,32 +44,49 @@
 }
 
 #title {
-  font-style: italic;
   display: inline-block;
   position: relative;
   padding: 0;
-  padding-left: 130px;
+  padding-left: 110px;
   vertical-align: top;
-  margin-top: 20px;
+  height: 80px;
 }
 
-#title h1 {
-  font-size: 3.8em;
-  margin: 2px;
-  padding: 0;
+#title img {
+  height: 80px;
 }
 
-#title h2 {
-  font-size: 1em;
+#search_container {
+  display: inline-block;
+  position: relative;
+  top: 25px;
+}
+
+#query  {
+  background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
+  border: 1px solid #d1d1d1;
+  color: #bebebe;
+  width: 0px;
+  padding: 6px 20px 6px 15px;
+  border-radius: 20px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  transition: all 0.7s ease 0s;
+}
+
+#query:focus {
+  width: 100px;
+  outline:none; box-shadow:none;
+  padding: 6px 15px 6px 35px;
 }
 
 /* For different sizes */
 
 /* menu bar */
 
-@media (max-width: 910px) {
+@media (max-width: 883px) {
   #menu ul li ul .first {
-    margin-top: 20px; //the gap between the menu and submenu
+    margin-top: 100px; //the gap between the menu and submenu
   }
   #menu {
     padding-top: 0px;

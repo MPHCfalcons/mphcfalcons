@@ -4,8 +4,16 @@
 }
 
 #sponsors li {
-  width: 500px;
+  width: 300px;
   display: inline-block;
-  padding-bottom: 50px;
-  text-align: center;
+  text-align: left;
+  padding: 20px 70px 50px 70px;
+}
+
+#sponsors h2 {
+  font-size: 20px;
+}
+
+#sponsors-page #body {
+  width: 100%;
 }

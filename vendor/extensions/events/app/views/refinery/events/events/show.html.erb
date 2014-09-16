@@ -1,32 +1,10 @@
-<% content_for :body_content_title do %>
-  <%= @event.title %>
-<% end %>
-
 <% content_for :body do %>
-  <section>
-    <h1>Title</h1>
-    <p>
-      <%=raw @event.title %>
-    </p>
-  </section>
-  <section>
-    <h1>Date</h1>
-    <p>
-      <%=raw @event.date %>
-    </p>
-  </section>
-  <section>
-    <h1>Photo</h1>
-    <p>
-      <%= image_fu @event.photo, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>Blurb</h1>
+    <h2><%=raw @event.title.upcase %></h2>
+    <%=raw @event.date %>
     <p>
       <%=raw @event.blurb %>
     </p>
-  </section>
+    <%= image_fu @event.photo, '300x300' %>
 <% end %>
 
 <% content_for :side_body do %>
@@ -35,7 +13,7 @@
     <ul id="events">
       <% @events.each do |event| %>
         <li>
-          <%= link_to event.title, refinery.events_event_path(event) %>
+        <h2><%= link_to event.title.upcase, refinery.events_event_path(event) %></h2>
         </li>
       <% end %>
     </ul>

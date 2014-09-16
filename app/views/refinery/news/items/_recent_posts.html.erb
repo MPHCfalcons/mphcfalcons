@@ -4,18 +4,18 @@
       <article class="news_items_main">
         <%= image_fu item.news_image, '280x280', class: "image-align-#{cycle("left", "right")}" %>
         <div class="news_items_content">
-          <h2><%= link_to item.title, refinery.news_item_path(item) %></h2>
+          <h2><%= link_to item.title.upcase, refinery.news_item_path(item) %></h2>
           <p class='published_date'>
             <small><%= l(item.publish_date, :format => :short) %></small>
           </p>
           <div class="news_item_truncated">
-          <%= truncate  item.body, :length => 300,
+          <%= truncate  item.body, :length => 500,
                                    :omission => " ... ",
                                    :preserve_html_tags => true %>
           </div>
           <div class='news_footer'>
-            <%= link_to 'Read more', refinery.news_item_path(item), class: "readMore" %>
-            <%= link_to("Download", item.attachment.url) if item.attachment %>
+            <%= link_to 'READ MORE', refinery.news_item_path(item), class: "readMore" %>
+            <%= link_to("DOWNLOAD", item.attachment.url) if item.attachment %>
           </div>
         </div>
         </div>

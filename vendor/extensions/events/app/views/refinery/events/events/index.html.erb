@@ -2,10 +2,30 @@
   <ul id="events">
     <% @events.each do |event| %>
       <li>
-        <%= link_to event.title, refinery.events_event_path(event) %>
+        <h2><%= link_to  event.title.upcase, refinery.events_event_path(event) %></h2>
+        <%=raw event.date %>
+        <p>
+          <%= truncate  event.blurb, :length => 500,
+                                     :omission => " ... ",
+                                     :preserve_html_tags => true %>
+        </p>
+        <%= link_to 'READ MORE', refinery.events_event_path(event), class: "readMore" %>
       </li>
     <% end %>
   </ul>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2>Other Events</h2>
+    <ul id="events">
+      <% @events.each do |event| %>
+        <li>
+        <h2><%= link_to event.title.upcase, refinery.events_event_path(event) %></h2>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
 <% end %>
 
 <%= render '/refinery/content_page' %>

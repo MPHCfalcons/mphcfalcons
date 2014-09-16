@@ -38,6 +38,8 @@ GEM
       multi_json (~> 1.0)
     acts_as_indexed (0.8.3)
     arel (3.0.3)
+    autoprefixer-rails (2.2.0.20140804)
+      execjs
     awesome_nested_set (2.1.6)
       activerecord (>= 3.0.0)
     babosa (0.3.11)
@@ -164,6 +166,9 @@ GEM
       acts_as_indexed (~> 0.8.0)
       dragonfly (~> 0.9.12)
       refinerycms-core (= 2.1.2)
+    refinerycms-search (2.1.0)
+      refinerycms-acts-as-indexed (~> 1.0.0)
+      refinerycms-core (~> 2.1.0)
     refinerycms-settings (2.1.1)
       refinerycms-core (~> 2.1.1)
     routing-filter (0.3.1)
@@ -199,6 +204,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails (~> 2.2.0.20140804)
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.18)
@@ -208,6 +214,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-events!
   refinerycms-news (~> 2.1.0)
+  refinerycms-search (~> 2.1.0)
   refinerycms-sponsors!
   sass-rails (~> 3.2.3)
   sqlite3
