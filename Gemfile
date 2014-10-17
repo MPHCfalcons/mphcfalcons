@@ -6,9 +6,10 @@ gem 'rails', '3.2.18'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg'
 end
 
+gem 'rubygems-update', '~> 1.8.25'
 
 # Gems used only for assets and not required
 # in production environments by default.

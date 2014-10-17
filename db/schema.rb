@@ -11,17 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140814064714) do
+ActiveRecord::Schema.define(:version => 20140916221249) do
 
-  create_table "refinery_events", :force => true do |t|
-    t.string   "title"
-    t.datetime "date"
-    t.integer  "photo_id"
-    t.text     "blurb"
-    t.integer  "position"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+# Could not dump table "refinery_events" because of following StandardError
+#   Unknown type 'resource' for column 'attachment_id'
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"

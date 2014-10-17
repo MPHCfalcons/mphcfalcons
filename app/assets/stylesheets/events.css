@@ -1,0 +1,17 @@
+#events-page #body h2 {
+  font-size: 28px;
+}
+
+#body #events {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#body #events li {
+  padding-bottom: 30px;
+}
+
+#body #events li li {
+  padding-bottom: 0px;
+}
+

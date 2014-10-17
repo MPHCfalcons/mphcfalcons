@@ -3,7 +3,7 @@ module Refinery
     class Event < Refinery::Core::BaseModel
       self.table_name = 'refinery_events'
 
-      attr_accessible :title, :date, :photo_id, :blurb, :position
+      attr_accessible :title, :date, :photo_id, :blurb, :position, :attachment_id
 
       validates :title, :presence => true, :uniqueness => true
 

@@ -1,0 +1,107 @@
+
+#menu {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+#menu ul ul {
+  display: none;
+}
+
+#menu ul li:hover > ul{
+  display: block;
+}
+
+#menu ul {
+  z-index: 1;
+  padding: 0 10px;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+
+#menu ul li {
+  float: left;
+}
+
+#menu ul li a {
+  padding: 5px 10px 5px 10px;
+  before: "";
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+#menu ul li a:before {
+  content: "";
+}
+
+#menu ul li:hover {
+}
+
+#menu ul li:hover a {
+  color: #fff;
+}
+
+#menu ul li:hover a:before {
+  content: "";
+}
+
+#menu ul li:hover > ul {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 10px;
+}
+
+#menu ul li ul .first {
+  margin-top: 26px; //the gap between the menu and submenu
+}
+
+#menu ul li:hover > ul li {
+  float: none;
+  display: block;
+  padding-top:2px;
+  background-color: black;
+  border-bottom: solid 1px;
+  border-bottom-color: #03954B;
+  text-align: left;
+  width: 160px;
+}
+
+#menu ul li:hover > ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#menu ul li:hover > ul li a:before {
+  content: "";
+}
+
+#menu ul li:hover > ul li a:hover{
+  color: #03954B;
+}
+
+#menu ul li {
+  position: relative;
+}
+
+#menu ul li ul {
+  position: absolute;
+  top: 28px;
+  left: 0px;
+}
+
+#menu ul li ul li ul {
+  position: absolute;
+  top: 28px;
+  left: 140px;
+}
+
+
+
