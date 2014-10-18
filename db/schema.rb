@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20140916221249) do
 
-# Could not dump table "refinery_events" because of following StandardError
-#   Unknown type 'resource' for column 'attachment_id'
-
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
     t.string   "image_name"
@@ -40,9 +37,6 @@ ActiveRecord::Schema.define(:version => 20140916221249) do
 
   add_index "refinery_news_item_translations", ["locale"], :name => "index_refinery_news_item_translations_on_locale"
   add_index "refinery_news_item_translations", ["refinery_news_item_id"], :name => "index_refinery_news_item_translations_fk"
-
-# Could not dump table "refinery_news_items" because of following StandardError
-#   Unknown type 'image' for column 'news_image_id'
 
   create_table "refinery_page_part_translations", :force => true do |t|
     t.integer  "refinery_page_part_id"
