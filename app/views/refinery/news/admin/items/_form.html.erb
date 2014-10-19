@@ -26,7 +26,7 @@
   <%= render :partial => "/refinery/admin/image_picker", :locals => {
     :f => f,
     :field => :news_image_id,
-    :image => f.object.news_image,
+    :image => @item.news_image,
     :toggle_image_display => false
   }
   %>
