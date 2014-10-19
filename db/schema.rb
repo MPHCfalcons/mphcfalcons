@@ -13,6 +13,17 @@
 
 ActiveRecord::Schema.define(:version => 20140916221249) do
 
+  create_table "refinery_events", :force => true do |t|
+    t.string   "title"
+    t.datetime "date"
+    t.integer  "photo_id"
+    t.text     "blurb"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.integer  "attachment_id"
+  end
+
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
     t.string   "image_name"
@@ -37,6 +48,22 @@ ActiveRecord::Schema.define(:version => 20140916221249) do
 
   add_index "refinery_news_item_translations", ["locale"], :name => "index_refinery_news_item_translations_on_locale"
   add_index "refinery_news_item_translations", ["refinery_news_item_id"], :name => "index_refinery_news_item_translations_fk"
+
+  create_table "refinery_news_items", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "publish_date"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "image_id"
+    t.datetime "expiration_date"
+    t.string   "source"
+    t.string   "slug"
+    t.integer  "news_image_id"
+    t.integer  "attachment_id"
+  end
+
+  add_index "refinery_news_items", ["id"], :name => "index_refinery_news_items_on_id"
 
   create_table "refinery_page_part_translations", :force => true do |t|
     t.integer  "refinery_page_part_id"
