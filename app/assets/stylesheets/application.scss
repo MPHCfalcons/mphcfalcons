@@ -28,13 +28,11 @@ body {
 h1 {
   font-size: 48px;
   font-family: "HelveticaNeueW01-BlackC";
-  text-transform: uppercase;
 }
 
 h2 {
   font-size: 15px;
   font-family: "HelveticaNeueW01-BlackC";
-  text-transform: uppercase;
 }
 
 #page {
@@ -53,19 +51,25 @@ h2 {
   right: 0;
   top: 400px;
   line-height: 19px;
+  margin-right: 20px;
 }
 
 #side_body {
   width: 22%;
   top: 400px;
-  padding-top: 10px;
   margin-left: 20px;
   position: absolute;
   line-height: 15px;
+  padding: 0 20px;
+  padding-top: 10px;
 }
 
 #side_body h2 {
-  color: #797979
+  color: #0E3178;
+}
+
+#side_body p {
+  color: #797979;
 }
 
 #banner {
@@ -100,3 +104,10 @@ h2 {
   padding-top: 25%;
 }
 
+#mti_wfs_colophon {
+  opacity: 0;
+}
+
+#footer {
+  display: none;
+}
