@@ -20,6 +20,8 @@
 
 #news-page #body .news_item_truncated {
   padding-bottom: 30px;
+  height: 130px;
+  overflow: hidden;
 }
 
 .news_items_content img {
@@ -68,5 +70,9 @@ a:link, a:visited, a:active {
   width: 100%;
   padding-top: 15px;
   font-size: 1rem;
+}
+
+#other_news {
+  list-style: none;
 }
 
