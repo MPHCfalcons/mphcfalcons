@@ -18,7 +18,7 @@
   position: relative;
 }
 
-#news-page #body .news_item_truncated {
+.news_item_truncated {
   padding-bottom: 30px;
   height: 130px;
   overflow: hidden;
