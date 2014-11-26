@@ -21,10 +21,12 @@ mphclogowhite.png: mphclogowhite-8676b544fa310466fa10e1356a0386c4.png
 mphclogowhite/index.png: mphclogowhite-8676b544fa310466fa10e1356a0386c4.png
 search-white.png: search-white-35864b515783550d8a4a170493f28da4.png
 search-white/index.png: search-white-35864b515783550d8a4a170493f28da4.png
+ws2.jpg: ws2-178a4d8d6cae1d8657da7268cee7082e.jpg
+ws2/index.jpg: ws2-178a4d8d6cae1d8657da7268cee7082e.jpg
 application.js: application-e86df31824f73ffbc0e3c7120b2b10a5.js
 application/index.js: application-e86df31824f73ffbc0e3c7120b2b10a5.js
-application.css: application-98444ae4c94b9e7fdd3fdb2ed6b5d482.css
-application/index.css: application-98444ae4c94b9e7fdd3fdb2ed6b5d482.css
+application.css: application-f08eac65dbb544025ac771a2b63aca62.css
+application/index.css: application-f08eac65dbb544025ac771a2b63aca62.css
 favicon.ico: favicon-acec7f735fa1a67eaf836a34ad4e9bd3.ico
 favicon/index.ico: favicon-acec7f735fa1a67eaf836a34ad4e9bd3.ico
 refinery/add.png: refinery/add-31e0c9c76c23e5a0d5146a7bf7a3381f.png
