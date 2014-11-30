@@ -23,6 +23,13 @@ body {
   padding: 0;
   margin: 0;
   color: #0E3178;
+
+  /* To fix lame chrome webfonts bug */
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0.1s;
 }
 
 h1 {
@@ -110,4 +117,9 @@ h2 {
 
 #footer {
   display: none;
+}
+
+@-webkit-keyframes fontfix {
+  from { opacity: 1; }
+  to { opacity: 1; }
 }
