@@ -31,8 +31,14 @@ $(window).resize(function() {
     var title = $('#imageMenu #banner h2');
     var height = imageDiv.height();
 
-    console.log(title);
-
     title.class('width', height);
+});
+
+jQuery.fn.redraw = function() {
+    return this.hide(0, function(){jQuery(this).show()});
+};
+
+jQuery(document).ready(function() {
+    jQuery('body').redraw();
 });
 
