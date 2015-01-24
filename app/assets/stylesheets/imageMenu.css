@@ -29,7 +29,8 @@
   top: 65%;
   color: white;
   text-align: center;
-  width: 25%;
+  width: 2%;
+  text-shadow: 1px 1px 3px grey;
 }
 
 #imageMenu h1 {

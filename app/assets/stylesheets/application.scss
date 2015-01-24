@@ -16,7 +16,7 @@
 
 body {
   font-family: "HelveticaNeueW01-57Cn", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   width: 100%;
   height: 100%;
@@ -38,8 +38,13 @@ h1 {
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 24px;
   font-family: "HelveticaNeueW01-BlackC";
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #page {
@@ -53,12 +58,28 @@ h2 {
 }
 
 #body {
-  width: 75%;
+  width: 70%;
   position: absolute;
   right: 0;
   top: 400px;
   line-height: 19px;
   margin-right: 20px;
+}
+
+#body h1 {
+  line-height: auto;
+}
+
+#body h2 {
+  line-height: auto;
+}
+
+#body h3 {
+  line-height: auto;
+}
+
+#body h4 {
+  line-height: auto;
 }
 
 #side_body {
@@ -73,6 +94,7 @@ h2 {
 
 #side_body h2 {
   color: #0E3178;
+  font-size: 18px;
 }
 
 #side_body p {
