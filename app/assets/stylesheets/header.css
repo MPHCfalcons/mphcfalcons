@@ -40,6 +40,7 @@
 #title a:link, 
 #title a:visited,
 #title a:active {
+  text-decoration: none;
   color: white;
 }
 
