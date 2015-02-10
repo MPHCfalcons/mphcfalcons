@@ -35,6 +35,8 @@ body {
 h1 {
   font-size: 48px;
   font-family: "HelveticaNeueW01-BlackC";
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -64,6 +66,7 @@ a {
   top: 400px;
   line-height: 19px;
   margin-right: 20px;
+  margin-top: 20px;
 }
 
 #body h1 {
@@ -89,7 +92,7 @@ a {
   position: absolute;
   line-height: 15px;
   padding: 0 20px;
-  padding-top: 10px;
+  margin-top: 20px;
 }
 
 #side_body h2 {
