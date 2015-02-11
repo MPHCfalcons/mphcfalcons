@@ -36,7 +36,6 @@
 .news_items_main h2 {
   display: inline-block;
   padding-right: 20px;
-  text-decoration: none;
   color: #0E3178;
   font-size: 32px;
 }
@@ -53,6 +52,12 @@ a:link, a:visited, a:active {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 14px;
+}
+
+.news_items_content h2 a:link 
+.news_items_content h2 a:visited 
+.news_items_content h2 a:active {
+  text-decoration: none;
 }
 
 .news_items_image {
