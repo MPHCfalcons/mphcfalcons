@@ -13,16 +13,17 @@
 }
 
 #topPic {
-  height: 50px;
+  /*height: 50px;*/
   width: 100%;
-  position: absolute;
-  overflow: hidden;
+  position: fixed;
+  /*position: absolute;*/
+  /*overflow: hidden;*/
 }
 
 .topImage {
   position: relative;
   width: 100%;
-  top: -150px;
+  top: -560px;
 }
 
 .logo {
@@ -76,9 +77,25 @@
 }
 
 #query:focus {
-  width: 120px;
-  outline:none; box-shadow:none;
+  width: 150px;
+  outline: none; 
+  box-shadow: none;
   padding: 6px 15px 6px 35px;
+}
+
+#social_media {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  padding-top: 18px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-left:20px;
+}
+#social_media img {
+	height:45px;
+	width:45px;
 }
 
 /* For different sizes */
@@ -87,7 +104,7 @@
 
 @media (max-width: 883px) {
   #menu ul li ul .first {
-    margin-top: 100px; //the gap between the menu and submenu
+    margin-top: 100px; /*the gap between the menu and submenu*/
   }
   #menu {
     padding-top: 0px;
