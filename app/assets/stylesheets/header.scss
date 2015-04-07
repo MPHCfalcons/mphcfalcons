@@ -16,6 +16,11 @@
   /*height: 50px;*/
   width: 100%;
   position: fixed;
+  background-image: url('assets/images/wp2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   /*position: absolute;*/
   /*overflow: hidden;*/
 }
