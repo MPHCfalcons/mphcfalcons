@@ -13,6 +13,10 @@
  *= require_self
  *= require_tree .
  */
+html {
+  background: url(/assets/ws2.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
 
 body {
   font-family: "HelveticaNeueW01-57Cn", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
