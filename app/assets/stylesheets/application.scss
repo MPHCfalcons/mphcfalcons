@@ -90,13 +90,12 @@ a {
 }
 
 #side_body {
-  width: 22%;
+  width: 23%;
   top: 400px;
   margin-left: 20px;
   position: absolute;
   line-height: 15px;
-  padding: 0 20px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #side_body h1 {
@@ -111,6 +110,12 @@ a {
 #side_body p {
   color: #797979;
   line-height: 20px;
+}
+
+#body .inner, #side_body .inner {
+  background-color: #EBEBEB;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 #banner {
@@ -130,6 +135,9 @@ a {
   width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+li #banner img {
   border-radius: 5vw;
 }
 
